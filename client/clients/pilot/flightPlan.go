@@ -1,6 +1,9 @@
 package pilot
 
-import "github.com/xetarusx/ivao-whazzup-parser/client/clients/pilot/flightplan"
+import (
+	"github.com/xetarusx/ivao-whazzup-parser/client/clients/pilot/flightplan"
+	"time"
+)
 
 type FlightPlan struct {
 	Id                       int64               `json:"id"`
@@ -22,8 +25,8 @@ type FlightPlan struct {
 	DepartureTime            int64               `json:"departureTime"`
 	ActualDepartureTime      int64               `json:"actualDepartureTime"`
 	PeopleOnBoard            int64               `json:"peopleOnBoard"`
-	CreatedAt                string              `json:"createdAt"`
-	UpdatedAt                string              `json:"updatedAt"`
+	CreatedAt                time.Time           `json:"createdAt"`
+	UpdatedAt                time.Time           `json:"updatedAt"`
 	AircraftEquipments       string              `json:"aircraftEquipments"`
 	AircraftTransponderTypes string              `json:"aircraftTransponderTypes"`
 	Aircraft                 flightplan.Aircraft `json:"aircraft"`

@@ -2,6 +2,7 @@ package clients
 
 import (
 	"github.com/xetarusx/ivao-whazzup-parser/client/clients/pilot"
+	"time"
 )
 
 type Pilot struct {
@@ -13,7 +14,7 @@ type Pilot struct {
 	SoftwareTypeId  string           `json:"softwareTypeId"`
 	SoftwareVersion string           `json:"softwareVersion"`
 	Rating          int64            `json:"rating"`
-	CreatedAt       string           `json:"createdAt"`
+	CreatedAt       time.Time        `json:"createdAt"`
 	FlightPlan      pilot.FlightPlan `json:"flightPlan"`
 	PilotSession    pilot.Session    `json:"pilotSession"`
 	LastTrack       pilot.LastTrack  `json:"lastTrack"`

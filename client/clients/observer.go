@@ -1,6 +1,9 @@
 package clients
 
-import "github.com/xetarusx/ivao-whazzup-parser/client/clients/atc"
+import (
+	"github.com/xetarusx/ivao-whazzup-parser/client/clients/atc"
+	"time"
+)
 
 type Observer struct {
 	Time            int64         `json:"time"`
@@ -10,7 +13,7 @@ type Observer struct {
 	ServerId        string        `json:"serverId"`
 	SoftwareTypeId  string        `json:"softwareTypeId"`
 	SoftwareVersion string        `json:"softwareVersion"`
-	CreatedAt       string        `json:"createdAt"`
+	CreatedAt       time.Time     `json:"createdAt"`
 	ATCSession      atc.Session   `json:"atcSession"`
 	LastTrack       atc.LastTrack `json:"lastTrack"`
 }

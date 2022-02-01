@@ -5,10 +5,11 @@ import (
 	"github.com/xetarusx/ivao-whazzup-parser/connections"
 	"github.com/xetarusx/ivao-whazzup-parser/server"
 	"github.com/xetarusx/ivao-whazzup-parser/voiceServer"
+	"time"
 )
 
 type Whazzup struct {
-	UpdatedAt    string                    `json:"updatedAt"`
+	UpdatedAt    time.Time                 `json:"updatedAt"`
 	Servers      []server.Server           `json:"servers"`
 	VoiceServers []voiceServer.VoiceServer `json:"voiceServers"`
 	Clients      client.Clients            `json:"clients"`
