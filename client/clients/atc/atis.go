@@ -1,6 +1,7 @@
 package atc
 
 import (
+	"github.com/xetarusx/ivao-whazzup-parser/misc"
 	"strings"
 	"time"
 )
@@ -41,4 +42,8 @@ func (a ATIS) GetStationName() string {
 	textBeforeInformation := atisLine2[0:pos]
 
 	return textBeforeInformation
+}
+
+func (a ATIS) GetRevisionLong() string {
+	return misc.IcaoLetterToWord(a.Revision)
 }
