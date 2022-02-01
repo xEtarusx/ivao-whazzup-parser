@@ -15,6 +15,6 @@ type Whazzup struct {
 	Connections  connections.Connections   `json:"connections"`
 }
 
-func (w Whazzup) GetTotalConnections() int64 {
+func (w Whazzup) GetConnectionsTotal() int64 {
 	return w.Connections.Total
 }

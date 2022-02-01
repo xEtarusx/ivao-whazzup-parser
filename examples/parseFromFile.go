@@ -15,5 +15,5 @@ func ParseFromFile(path string) {
 
 	// You can now use all functions on the whazzup struct
 	// e.g. Print total network connections
-	fmt.Println(w.GetTotalConnections())
+	fmt.Println(w.GetConnectionsTotal())
 }
