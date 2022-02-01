@@ -1,0 +1,20 @@
+package clients
+
+import (
+	"github.com/xetarusx/ivao-whazzup-parser/client/clients/pilot"
+)
+
+type Pilot struct {
+	Time            int64            `json:"time"`
+	Id              int64            `json:"id"`
+	UserId          int64            `json:"userId"`
+	Callsign        string           `json:"callsign"`
+	ServerId        string           `json:"serverId"`
+	SoftwareTypeId  string           `json:"softwareTypeId"`
+	SoftwareVersion string           `json:"softwareVersion"`
+	Rating          int64            `json:"rating"`
+	CreatedAt       string           `json:"createdAt"`
+	FlightPlan      pilot.FlightPlan `json:"flightPlan"`
+	PilotSession    pilot.Session    `json:"pilotSession"`
+	LastTrack       pilot.LastTrack  `json:"lastTrack"`
+}
