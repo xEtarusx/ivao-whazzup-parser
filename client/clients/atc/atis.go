@@ -45,5 +45,5 @@ func (a ATIS) GetStationName() string {
 }
 
 func (a ATIS) GetRevisionLong() string {
-	return misc.IcaoLetterToWord(a.Revision)
+	return misc.GetIcaoCodeWordByLetter(a.Revision)
 }

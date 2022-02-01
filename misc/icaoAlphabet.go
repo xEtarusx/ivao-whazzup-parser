@@ -1,6 +1,6 @@
 package misc
 
-func IcaoLetterToWord(letter string) string {
+func GetIcaoCodeWordByLetter(letter string) string {
 	m := make(map[string]string)
 
 	m["A"] = "Alpha"
