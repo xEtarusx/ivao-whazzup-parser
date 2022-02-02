@@ -5,7 +5,7 @@ import (
 	"github.com/xetarusx/ivao-whazzup-parser/whazzup"
 )
 
-func ParseFromBytes(bytes []byte) {
+func parseFromBytes(bytes []byte) {
 	// Parse bytes into the whazzup struct
 	w, err := whazzup.NewWhazzupByJson(bytes)
 	if err != nil {

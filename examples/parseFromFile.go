@@ -5,7 +5,7 @@ import (
 	"github.com/xetarusx/ivao-whazzup-parser/whazzup"
 )
 
-func ParseFromFile(path string) {
+func parseFromFile(path string) {
 	// Read file in path and parse content into the whazzup struct
 	w, err := whazzup.NewWhazzupByFile(path)
 	if err != nil {
