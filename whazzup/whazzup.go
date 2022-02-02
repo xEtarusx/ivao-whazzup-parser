@@ -22,8 +22,8 @@ func (w Whazzup) GetConnectionsTotal() int64 {
 	return w.Connections.Total
 }
 
-// GetServerIdList Get list of all server ids
-func (w Whazzup) GetServerIdList() []string {
+// GetServerIds Get list of all server ids
+func (w Whazzup) GetServerIds() []string {
 	var list []string
 
 	for _, s := range w.Servers {
@@ -44,8 +44,8 @@ func (w Whazzup) GetServerById(id string) (server.Server, error) {
 	return server.Server{}, errors.New("server not found")
 }
 
-// GetVoiceServerIdList Get list of all voice server ids
-func (w Whazzup) GetVoiceServerIdList() []string {
+// GetVoiceServerIds Get list of all voice server ids
+func (w Whazzup) GetVoiceServerIds() []string {
 	var list []string
 
 	for _, s := range w.Servers {
