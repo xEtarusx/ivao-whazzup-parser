@@ -44,6 +44,7 @@ func (a ATIS) GetStationName() string {
 	return textBeforeInformation
 }
 
+// GetRevisionLong Get current ATIS revision word (e.g. Bravo, X-ray, etc.) by letter
 func (a ATIS) GetRevisionLong() string {
 	return misc.GetIcaoCodeWordByLetter(a.Revision)
 }
