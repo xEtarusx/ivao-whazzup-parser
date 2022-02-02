@@ -7,5 +7,5 @@ type VoiceServer struct {
 	Description        string `json:"description"`
 	CountryId          string `json:"countryId"`
 	CurrentConnections int64  `json:"currentConnections"`
-	MaximumConnections int64  `json:"MaximumConnections"`
+	MaximumConnections int64  `json:"maximumConnections"`
 }
